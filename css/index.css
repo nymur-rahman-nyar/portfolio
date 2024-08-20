@@ -194,7 +194,15 @@ body, html {
 
 
 
-
+  .title-education {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 0; /* Adds padding above and below the title, keeping sides unchanged */
+    text-align: center; /* Optionally center the text */
+    font-size: 24px; /* Adjusts the font size for better visibility */
+    color: #333; /* Sets a dark grey color for the text */
+    border-bottom: 1px solid #ccc; /* Optionally adds a subtle line under the title for visual separation */
+  }
 
 
 
