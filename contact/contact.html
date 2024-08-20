@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Better compatibility with IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact/contact.css">
+</head>
+<body>
+    
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            
+            <h2 class="title">Contact Me</h2>
+            <form action="sendmail.php" method="POST" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+    
+                <button type="submit" class="fun-button">Send Message</button>
+            </form>
+
+
+            
+        </div>
+    </section>
+    
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© <span id="current-year"></span> Nymur Rahman. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

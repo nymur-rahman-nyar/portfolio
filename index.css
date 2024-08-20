@@ -1,0 +1,528 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Varela', sans-serif; /* Sets Varela as the basic font for the webpage */
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+
+/*  HEADER  */
+
+.site-header {
+    display: flex;                  /* Enables Flexbox */
+    justify-content: center;        /* Centers items horizontally */
+    align-items: center;            /* Centers items vertically */
+    padding: 2%;                    /* Padding for the header */
+    background-color: #f8f9fa;      /* Background color */
+}
+
+.text-intro{
+    margin-right: 20px; 
+    text-align: right;
+}
+
+
+.header-text {
+    order: 2;                       /* Ensures this container goes to the right */
+    text-align: right;              /* Aligns the text inside this div to the right */
+    padding-left: 20px;             /* Adds some space between the text and the image */
+}
+
+.header-image img {
+    margin-left: 20px;   
+    width: 400px;                   /* Adjust width as necessary */
+    height: auto;                   /* Keeps the aspect ratio intact */
+    border-radius: 5px;
+}
+
+
+
+
+
+/*ALL THE NAV LIST ITEMS*/
+.main-nav {
+    background-color: #333; /* Dark background for the nav bar */
+    text-align: center; /* Centering the nav list */
+    
+}
+
+.nav-list {
+    list-style-type: none; /* Removes bullet points from the list */
+    background-color: #333;
+    overflow: hidden; /* Clears floated elements inside */
+    padding: 20px; /* Padding on the sides to ensure some space */
+    margin: 0 auto; /* Center aligning the nav-list */
+    max-width: 960px; /* Max width to prevent the nav bar from stretching too far on larger screens */
+}
+
+.nav-item {
+    display: inline-block; /* Aligns list items in a row */
+    width: 24%; /* Divides each nav item into roughly equal spaces, adjust based on number of items */
+    text-align: center; /* Centers text in each nav item */
+}
+
+.nav-link {
+    display: block;
+    padding: 1% 0; /* Reduced padding and made it percentage-based */
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text color */
+    font-weight: bold; /* Makes font bold */
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ccc; /* Light gray for hover effect */
+    background-color: transparent; /* Ensures no background color change */
+}
+
+.nav-link:active {
+    color: #999; /* Change text color upon click */
+    transform: scale(0.98); /* Slightly scale down the link to give a push effect */
+}
+
+
+/*ALL BODY ITEM HERE*/
+
+
+
+
+
+
+
+
+
+
+/* UNIVERITY INFO*/
+.flexbox-education {
+    display: flex;                /* Enable Flexbox */
+    justify-content: flex-start;  /* Align items to the left */
+    padding-left: 20vw;            /* Set padding relative to the viewport width */
+}
+
+#title-education{
+    padding-left: 10px;
+}
+
+
+#university {
+    display: flex;                /* Enables flexbox layout */
+    justify-content: center;      /* Centers the items along the main axis (horizontally) */
+    align-items: center;          /* Centers the items along the cross axis (vertically) */
+    text-align: center;           /* Centers text alignment */
+}
+
+#university_text {
+    font-size: 1.7em;  /* Makes the text larger than the default size */
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RELEVANT COURSE Dropdown Button Styling */
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 20px 18px; /* Increased top/bottom padding for better spacing */
+    display: none; /* Keep this as is to start with the content hidden */
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center; /* Ensures content is left-aligned */
+    margin: 0 auto; /* Centers the content horizontally */
+    width: 80%; /* Adjust width as needed */
+    line-height: 1.6; /* Increases the line height for better readability */
+    font-size: 1.1em; /* Optionally increase the font size if needed */
+    transition: max-height 1s ease-out;
+  }
+  
+  .content ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .content li {
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  
+
+
+
+
+
+
+
+  /*   SKILLS */
+
+  .title {
+    margin: 50px 0; /* Adds margin above and below the title */
+    padding: 10px 0; /* Adds padding above and below the title, keeping sides unchanged */
+    text-align: center; /* Optionally center the text */
+    font-size: 24px; /* Adjusts the font size for better visibility */
+    color: #333; /* Sets a dark grey color for the text */
+    border-bottom: 1px solid #ccc; /* Optionally adds a subtle line under the title for visual separation */
+}
+
+
+
+
+
+#skillbox-main {
+    padding: 20px;
+    background-color: #f8f9fa; /* Subtle background color */
+    border-radius: 8px; /* Soft rounded corners */
+    display: flex; /* Ensures the container is flexible */
+    justify-content: center; /* Centers the child elements horizontally */
+    align-items: center; /* Centers the child elements vertically */
+    height: 100%; /* Takes full height to center vertically on the page */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers items in the container */
+    gap: 20px; /* More space between the items for a cleaner look */
+    padding: 20px; /* Padding inside the Languages container for spacing */
+}
+
+.grid div {
+    width: 80px; /* Fixed width for each box */
+    height: 80px; /* Fixed height for each box */
+    display: flex; /* Makes div a flex container */
+    align-items: center; /* Aligns content vertically center */
+    justify-content: center; /* Aligns content horizontally center */
+    background-color: white; /* Background color for each item */
+    border-radius: 4px; /* Rounded corners for each item */
+}
+
+.grid img {
+    max-width: 70%; /* Allows some padding around the image */
+    max-height: 70%; /* Keeps the image within the box dimensions */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+
+
+
+
+
+
+/*ALL PROJECT CARD styles*/
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 10px;
+}
+
+.card-header {
+    background: #f8f9fa;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+.card-body {
+    padding: 10px 15px;
+    color: #333;
+}
+
+.card-body p {
+    margin: 10px 0;
+}
+
+.card-body ul {
+    padding: 0;
+    list-style: none;
+}
+
+.card-body li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.card-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent elements */
+    display: block; /* Makes the link block-level to enclose the whole card */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Gives a slight lift to the card on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Increases shadow on hover for better effect */
+}
+
+.card:active {
+    transform: translateY(1px); /* Subtly moves the card down when clicked */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Makes the shadow deeper and closer, simulating a press */
+}
+
+
+
+/* Experience Card Styles */
+.experience-card {
+    background: #f8f9fa;          /* Light gray background, matching other cards */
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;            /* Centered with automatic margins */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Consistent shadow effect */
+    border-radius: 8px;           /* Rounded corners */
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f8f9fa;   /* Light gray background, matching the card */
+    color: #333;                 /* Dark text for contrast */
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.header h2, .header h3, .header p {
+    margin: 5px 0;              /* Space between elements */
+}
+
+.body {
+    padding: 20px;
+    color: #333;                /* Dark text for readability */
+    background-color: #ffffff;  /* White background for the body */
+}
+
+.body ul {
+    list-style: none;          /* No list style */
+    padding: 0;
+}
+
+.body li {
+    padding: 10px 0;           /* Padding for each list item */
+    border-bottom: 1px solid #eaeaea; /* Subtle separator line */
+}
+
+.body li:last-child {
+    border-bottom: none;       /* No border for the last item */
+}
+
+
+/*footer styles*/
+
+
+
+.site-footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center-aligns the footer content */
+    padding: 20px 0; /* Padding above and below the footer content */
+    font-size: 0.8em; /* Smaller font size for the footer */
+}
+
+.footer-content {
+    margin: 0 auto; /* Centers the footer content horizontally */
+    width: 90%; /* Limits the width of the footer content */
+    max-width: 1200px; /* Maximum width of the footer content */
+}
+
+.footer-links {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    text-align: center; /* Center-align text for links */
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 10px; /* Margin between links */
+}
+
+.footer-links a {
+    color: white; /* Ensures that links are white */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.footer-links a:hover, .footer-links a:focus {
+    text-decoration: underline; /* Adds underline on hover/focus for better accessibility */
+}
+
+
+/*lets connect text*/
+
+#connect{
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 20px;
+}
+
+
+/*contact me button*/
+
+/* Assuming the button is within a container, or use body if it's directly under the body */
+.container { /* Create a container div around your button if not already present */
+    display: flex;   /* Using Flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content (optional, if needed) */
+    height: 20vh; /* Optional: full viewport height, to center the button in the middle of the screen */
+}
+
+.fun-button {
+    display: inline-block;
+    background-color: #007BFF; /* A vibrant blue color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners for a friendly look */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.fun-button:hover, .fun-button:focus {
+    background-color: #0056b3; /* A slightly darker blue on hover for a tactile feel */
+    color: #FFD700; /* Gold color for text on hover for more fun */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+}
+
+.fun-button:active {
+    transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+.confetti {
+    position: fixed;
+    display: block;
+    pointer-events: none;
+    z-index: 1000;
+    top: 0;
+    animation: confetti-animation 3s linear forwards;
+}
+
+@keyframes confetti-animation {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(720deg); opacity: 0; }
+}
+
+
+
+/*MOBILE OPTIMIZATION*/
+
+@media (max-width: 600px) {  /* Adjust this breakpoint as needed */
+    .site-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .header-image img {
+        margin-left: 0px;   
+        
+    }
+
+    .text-intro {
+        text-align: center;
+    }
+
+    .header-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* UNIVERITY INFO*/
+    .flexbox-education {
+        display: flex;               /* Enable Flexbox */
+        justify-content: flex-start; /* Align items to the left */
+        padding-left: 5vw;           /* Use viewport width for relative sizing */
+    }
+    
+    #title-education {
+        padding-left: 5px;           /* Keeps padding small and appropriate for text elements */
+    }
+    
+    #university {
+        display: flex;               /* Enables flexbox layout */
+        justify-content: center;     /* Centers the items along the main axis (horizontally) */
+        align-items: center;         /* Centers the items along the cross axis (vertically) */
+        text-align: center;          /* Centers text alignment */
+        flex-direction: column;      /* Stacks the flex items vertically on smaller screens */
+    }
+    
+    #university_text {
+        font-size: 1.3em;            /* Makes the text larger than the default size */
+        font-weight: bold;           /* Makes the text bold */
+                  /* Adds space between the border and the text */
+        padding-bottom: 4px;
+    }
+
+    #duration{
+        padding-bottom: 40px;
+    }
+    
+    @media (max-width: 600px) {     /* Adjustments for mobile screens */
+        #university {
+            flex-direction: column;  /* Stack children vertically */
+            text-align: center;      /* Ensure text is centered after stacking */
+        }
+        
+        #university_text, #title-education {
+            padding-left: 10px;     /* Slightly larger padding for better mobile readability */
+        }
+    
+        .flexbox-education {
+            padding-left: 2vw;      /* Reduce padding on smaller screens */
+        }
+    }
+
+}
