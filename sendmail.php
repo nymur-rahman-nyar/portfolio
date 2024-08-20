@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         while ($email_attempts < 3 && !$email_sent) {
             if (mail($to, $subject, $email_content, $headers)) {
                 $email_sent = true;
-                header('Location: thanks.html');
+                header('Location: sent_successfully/thanks.html');
                 exit; 
             }
             $email_attempts++;
