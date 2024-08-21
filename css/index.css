@@ -256,7 +256,7 @@ p {
 
 
 
-  /*   SKILLS */
+  /*   All titles here */
 
   .title {
     margin: 50px 0; /* Adds margin above and below the title */
@@ -266,45 +266,73 @@ p {
     color: #333; /* Sets a dark grey color for the text */
     border-bottom: 1px solid #ccc; /* Optionally adds a subtle line under the title for visual separation */
 }
+  /*   Skills Title Only */
+  #title_skills {   
+    margin-bottom: 0; /* Adds margin above and below the title */
+    }
 
 
 
+/*HERE THE SKILL BODY   PART STARTS   */
 
 
-#skillbox-main {
-    padding: 20px;
-    background-color: #f8f9fa; /* Subtle background color */
-    border-radius: 8px; /* Soft rounded corners */
-    display: flex; /* Ensures the container is flexible */
-    justify-content: center; /* Centers the child elements horizontally */
-    align-items: center; /* Centers the child elements vertically */
-    height: 100%; /* Takes full height to center vertically on the page */
+/* Skills Section */
+.skills-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 50px 0; /* Padding for the section */
+    width: 100%; /* Ensures the background stretches the entire width */
+    text-align: center;
 }
 
-.grid {
+.skills-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    justify-content: center; /* Centers items in the container */
-    gap: 20px; /* More space between the items for a cleaner look */
-    padding: 20px; /* Padding inside the Languages container for spacing */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between skill categories */
+    max-width: 1200px; /* Limits the width of the container */
+    margin: 0 auto; /* Centers the container */
 }
 
-.grid div {
-    width: 80px; /* Fixed width for each box */
-    height: 80px; /* Fixed height for each box */
-    display: flex; /* Makes div a flex container */
-    align-items: center; /* Aligns content vertically center */
-    justify-content: center; /* Aligns content horizontally center */
-    background-color: white; /* Background color for each item */
-    border-radius: 4px; /* Rounded corners for each item */
+.skill-category {
+    background-color: #ffffff; /* White background for each skill box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 250px;
+    text-align: left; /* Aligns text to the left inside the box */
 }
 
-.grid img {
-    max-width: 70%; /* Allows some padding around the image */
-    max-height: 70%; /* Keeps the image within the box dimensions */
-    height: auto; /* Maintains aspect ratio */
+.skill-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark grey text color */
 }
 
+.skill-list {
+    list-style-type: none; /* Removes default list style */
+    padding: 0;
+}
+
+.skill-list li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Light grey line between items */
+}
+
+.skill-list li:last-child {
+    border-bottom: none; /* Removes line from last item */
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column; /* Stacks skill categories vertically on smaller screens */
+        align-items: center;
+    }
+    
+    .skill-category {
+        width: 90%; /* Adjust width for mobile screens */
+    }
+}
 
 
 
