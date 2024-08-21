@@ -16,6 +16,9 @@
 
     <!--conntecting the syle sheet-->
     <link rel="stylesheet" href="css/index.css">
+
+    <!--importing the linkedin logo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
@@ -33,12 +36,21 @@
             <h3 class="Introduction">Hi It's</h3>
             <h1>Nymur Rahman !</h1>
             <p>From Edmonton, Canada</p>
+            <i class="fa fa-linkedin-square" id="linkedin_logo" ></i>
+            <i class="fa fa-github-square" id="github_logo" ></i>
         </div>
         <div class="header-image">
             <img src="img/nymur.png" >
         </div>
+
+
+        
     </header>
     <main class="main-content">
+
+        <!--socials-->
+       
+
 
         <!--university -->
         
@@ -48,9 +60,9 @@
                 <img src="img/university_logo.png" alt="University Logo" class="university-logo">
                 <div class="university-details">
                     <h3>Univeristy of Alberta</h3>
-                    <p>Degree: Bachelor of Science in Computing Science</p>
-                    <p>Minor in Economics</p>
-                    <p>Estimated Graduation: 2026</p>
+                    <p>Bachelor of Science in Computing Science</p>
+                    <p> Minor in Economics</p>
+                    <p>September 2022 - Expected Graduation : June 2026</p>
                 </div>
 
                 
@@ -63,7 +75,7 @@
        
          <button class="collapsible">Relevant Courses taken</button>
          <div class="content">
-            <ul>
+            <ul id="course-list">
               <li>Advanced Data Structures with Algorithms</li>
               <li>Tangible Computing and Problem Solving</li>
               <li>Software Development Fundamentals</li>
@@ -244,6 +256,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
+
 
 
     

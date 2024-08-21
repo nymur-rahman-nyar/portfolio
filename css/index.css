@@ -87,9 +87,31 @@ body, html {
 
 /*ALL BODY ITEM HERE*/
 
+/*LinkedIn info and Github info*/
 
+#linkedin_logo {
+    color: #0077b5; /* LinkedIn's brand color */
+    font-size: 30px; /* Adjust the size of the icon */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
 
+#linkedin_logo:hover {
+    color: #005582; /* Darker shade of LinkedIn's color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
 
+/*this is the github logo one*/
+
+#github_logo {
+    color: #181717; /* LinkedIn's brand color */
+    font-size: 30px; /* Adjust the size of the icon */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+#github_logo:hover {
+    color: #292727; /* Darker shade of LinkedIn's color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
 
 
 
@@ -97,60 +119,41 @@ body, html {
 
 
 /* UNIVERITY INFO*/
-.flexbox-education {
-    display: flex;                /* Enable Flexbox */
-    justify-content: flex-start;  /* Align items to the left */
-    padding-left: 20vw;            /* Set padding relative to the viewport width */
-}
-
-#title-education{
-    padding-left: 10px;
-}
-
-
 #university {
-    display: flex;                /* Enables flexbox layout */
-    justify-content: center;      /* Centers the items along the main axis (horizontally) */
-    align-items: center;          /* Centers the items along the cross axis (vertically) */
-    text-align: center;           /* Centers text alignment */
+    display: flex;
+    justify-content: center; /* Centers the university info */
+    padding: 20px;
 }
-
-#university_text {
-    font-size: 1.7em;  /* Makes the text larger than the default size */
-    font-weight: bold; /* Makes the text bold */
-}
-
-
-/*university info (new ones) */
 
 #university-info {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Space between the logo and the details */
-    margin: 20px 0; /* Adds some space above and below the section */
+    flex-direction: row;
+    align-items: center; /* Vertically centers the logo and text */
+    text-align: left;
+    max-width: 800px; /* Controls the max width of the content */
+    width: 100%; /* Ensures full width of the parent container */
 }
 
 .university-logo {
-    height: 100px; /* Adjust the height of the logo */
-    width: auto;
-    border-radius: 8px; /* Optional: adds rounded corners to the logo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    max-width: 150px; /* Adjust size of the logo */
+    margin-right: 20px; /* Adds space between the logo and the text */
 }
 
 .university-details {
-    font-family: 'Varela', sans-serif; /* Ensure it matches your website’s font */
+    text-align: left; /* Ensures text is left-aligned */
 }
 
-.university-details h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333; /* Adjust the color to match your design */
+h3 {
+    margin: 0; /* Removes default margin for heading */
 }
 
-.university-details p {
-    margin: 5px 0;
-    color: #555; /* Slightly lighter color for the details */
+p {
+    margin: 5px 0; /* Adds space between paragraphs */
 }
+
+
+
+
 
 
 
@@ -162,7 +165,6 @@ body, html {
 /* RELEVANT COURSE Dropdown Button Styling */
 
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #f8f9fa;
     color: #333;
@@ -171,53 +173,60 @@ body, html {
     width: 100%;
     border: none;
     text-align: center;
-    
     outline: none;
     font-weight: bold;
     font-size: 18px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+}
+
+/* Adding lines between the courses */
+#course-list li {
+    border-bottom: 1px solid #ccc; /* Add a line between items */
+    padding: 8px 0; /* Add some padding for better spacing */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover, .collapsible.active {
     background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-    padding: 20px 18px; /* Increased top/bottom padding for better spacing */
-    display: none; /* Keep this as is to start with the content hidden */
+}
+
+/* Style the collapsible content. Hidden by default */
+.content {
+    max-height: 0;
     overflow: hidden;
-    background-color: #ffffff;
-    text-align: center; /* Ensures content is left-aligned */
-    margin: 0 auto; /* Centers the content horizontally */
-    width: 80%; /* Adjust width as needed */
-    line-height: 1.6; /* Increases the line height for better readability */
-    font-size: 1.1em; /* Optionally increase the font size if needed */
-    transition: max-height 1s ease-out;
-  }
-  
-  .content ul {
+    transition: max-height 0.5s ease-out;
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+}
+
+.content ul {
     list-style-type: none; /* Removes default bullets */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
-  }
-  
-  .content li {
+    width: 100%; /* Ensures content takes full width */
+    max-width: 600px; /* Sets a max-width for centering */
+}
+
+.content li {
     margin-bottom: 10px; /* Adds space between list items */
-  }
+}
 
-
-  .collapsible:after {
+/* Change the plus sign to a minus sign when active */
+.collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: white;
+    color: #333;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
+
+.collapsible.active:after {
+    content: '\2796'; /* Unicode character for "minus" sign (-) */
+}
 
   
 
