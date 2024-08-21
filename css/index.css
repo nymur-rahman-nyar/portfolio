@@ -124,6 +124,7 @@ body, html {
     justify-content: center; /* Centers the university info */
     padding: 20px;
     margin-bottom: 40px;
+    
 }
 
 #university-info {
@@ -165,75 +166,17 @@ p {
 
 /* RELEVANT COURSE Dropdown Button Styling */
 
-
-.collapsible {
-    background-color: #f8f9fa;
-    color: #333;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
+#relevant_course{
+    background-color: grey;
+    color: white;
     border: none;
-    text-align: center;
-    outline: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Adding lines between the courses */
-#course-list li {
-    border-bottom: 1px solid #ccc; /* Add a line between items */
-    padding: 8px 0; /* Add some padding for better spacing */
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.collapsible:hover, .collapsible.active {
-    background-color: #ccc;
-}
-
-/* Style the collapsible content. Hidden by default */
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    text-align: left; /* Aligns text to the left */
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-}
-
-.content ul {
-    list-style-type: none; /* Removes default bullets */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    width: 100%; /* Ensures content takes full width */
-    max-width: 600px; /* Sets a max-width for centering */
-}
-
-.content li {
-    margin-bottom: 10px; /* Adds space between list items */
-}
-
-/* Change the plus sign to a minus sign when active */
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #333;
-    float: right;
-    margin-left: 5px;
-}
-
-.collapsible.active:after {
-    content: '\2796'; /* Unicode character for "minus" sign (-) */
-}
-
-  
 
 
-
-  .title-education {
+.title-education {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 10px 0; /* Adds padding above and below the title, keeping sides unchanged */
