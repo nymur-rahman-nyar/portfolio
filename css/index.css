@@ -121,19 +121,19 @@ body, html {
 /* UNIVERITY INFO*/
 #university {
     display: flex;
-    justify-content: center; /* Centers the university info */
-    padding: 20px;
+    justify-content: center; /* Center both items horizontally */
+    align-items: flex-start; /* Align items to the top */
     margin-bottom: 40px;
-    
+    padding-top: 20px; /* Optional: Add some padding at the top to move the content down slightly */
+    gap: 20px; /* Space between the university info and the countdown clock */
 }
 
 #university-info {
     display: flex;
     flex-direction: row;
     align-items: center; /* Vertically centers the logo and text */
-    text-align: left;
-    max-width: 800px; /* Controls the max width of the content */
-    width: 100%; /* Ensures full width of the parent container */
+    text-align: right;
+   
 }
 
 .university-logo {
@@ -155,15 +155,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
 /* RELEVANT COURSE Dropdown Button Styling */
 
 #relevant_course{
@@ -171,6 +162,23 @@ p {
     color: white;
     border: none;
 }
+
+
+/*clock is added here*/
+#countdown-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the clock to the right side of its container */
+    margin-top: 0; /* Align with the top of the university info */
+}
+
+
+#counter_graduation {
+    display: inline-block;
+    color: #fff; /* Text color for the badge */
+    background-color: #007C41; /* UofA green for the badge */
+    border-radius: 50px}
+/* Countdown Clock Styling */
 
 
 
