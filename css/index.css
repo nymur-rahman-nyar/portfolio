@@ -278,69 +278,76 @@ p {
 }
 
 
+/*project section */
 
-
-
-
-
-/*ALL PROJECT CARD styles*/
-
-.cards-container {
+.projects_section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stacks items vertically */
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 20px;
 }
 
-.card {
-    background: #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
-    margin: 10px;
+.visible_content_proj{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.card-header {
-    background: #f8f9fa;
-    color: #333;
-    padding: 10px 15px;
-    font-size: 1.2em;
+.project_hidden_content{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.card-body {
-    padding: 10px 15px;
-    color: #333;
+.project_title {
+    font-weight: bold; /* Makes the text bold */
 }
 
-.card-body p {
-    margin: 10px 0;
+/* Ensure consistent background color and remove border in all states */
+.accordion-button {
+    background-color: #ffffff; /* Set consistent white background */
+    color: #333; /* Set text color */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove shadow by default */
 }
 
-.card-body ul {
-    padding: 0;
-    list-style: none;
+/* Maintain consistent background color when expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff; /* Ensure the background remains white when expanded */
+    color: #333; /* Maintain text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow when expanded */
 }
 
-.card-body li {
-    background: #e9ecef;
-    margin: 5px 0;
-    padding: 5px 10px;
-    border-radius: 5px;
+/* Ensure consistent background color when collapsed */
+.accordion-button.collapsed {
+    background-color: #ffffff; /* Keep background white when collapsed */
+    box-shadow: none; /* No shadow when collapsed */
 }
 
-.card-link {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherits text color from parent elements */
-    display: block; /* Makes the link block-level to enclose the whole card */
+/* Remove the focus shadow color */
+.accordion-button:focus {
+    background-color: #ffffff; /* Keep background white when focused */
+    box-shadow: none; /* No shadow when focused */
+    outline: none; /* Remove default outline */
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Gives a slight lift to the card on hover */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Increases shadow on hover for better effect */
+/* Remove any shadow or outline when the button is active (clicked) */
+.accordion-button:active {
+    background-color: #ffffff; /* Keep background white when clicked */
+    box-shadow: none; /* No shadow when clicked */
+    outline: none; /* Remove default outline */
 }
 
-.card:active {
-    transform: translateY(1px); /* Subtly moves the card down when clicked */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Makes the shadow deeper and closer, simulating a press */
+/* Optional: Add a small shadow when hovered, to provide feedback */
+.accordion-button:hover {
+    background-color: #ffffff; /* Keep background white when hovered */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
+
+
+
+
+
+
 
 
 
@@ -482,6 +489,18 @@ p {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(500px) rotate(720deg); opacity: 0; }
 }
+
+
+
+
+/*CARD SYLE UNIVERSAL*/
+
+
+
+
+
+
+
 
 
 
