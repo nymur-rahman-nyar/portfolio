@@ -121,7 +121,36 @@ body, html {
 }
 
 
+/*university info (new ones) */
 
+#university-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the logo and the details */
+    margin: 20px 0; /* Adds some space above and below the section */
+}
+
+.university-logo {
+    height: 100px; /* Adjust the height of the logo */
+    width: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to the logo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.university-details {
+    font-family: 'Varela', sans-serif; /* Ensure it matches your website’s font */
+}
+
+.university-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333; /* Adjust the color to match your design */
+}
+
+.university-details p {
+    margin: 5px 0;
+    color: #555; /* Slightly lighter color for the details */
+}
 
 
 
@@ -202,6 +231,17 @@ body, html {
     font-size: 24px; /* Adjusts the font size for better visibility */
     color: #333; /* Sets a dark grey color for the text */
     border-bottom: 1px solid #ccc; /* Optionally adds a subtle line under the title for visual separation */
+  }
+
+
+ /*   CERTIFICATION */
+
+  #certifications{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center; /* Aligns items horizontally in the center */
+    align-items: center; /* Aligns items vertically in the center */
   }
 
 
