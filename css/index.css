@@ -189,13 +189,39 @@ p {
 
  /*   CERTIFICATION */
 
-  #certifications{
+ #certifications {
     display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    justify-content: center; /* Aligns items horizontally in the center */
-    align-items: center; /* Aligns items vertically in the center */
-  }
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Aligns the cards vertically */
+    gap: 20px; /* Adds space between the cards */
+    margin: 20px 0; /* Adds some margin above and below the certification section */
+}
+
+.certification-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    width: 25rem; /* Set a consistent width for both cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the cards */
+    border-radius: 8px; /* Adds rounded corners to the cards */
+    overflow: hidden; /* Ensures content stays within the card boundaries */
+}
+
+.card img {
+    width: 100%; /* Ensures the image takes up the full width of the card */
+    height: auto; /* Keeps the image's aspect ratio intact */
+}
+
+.card-body {
+    text-align: center; /* Center-aligns the text in the card body */
+}
+
+
+
+
+
 
 
 
