@@ -666,7 +666,13 @@ p {
 
 
 
-/*CARD SYLE UNIVERSAL*/
+
+
+
+
+
+
+
 
 
 
@@ -686,7 +692,8 @@ p {
     }
 
     .header-image img {
-        margin-left: 0px;   
+        margin-left: 0px;
+        margin-bottom: 20px;   
         
     }
 
@@ -705,7 +712,7 @@ p {
     .flexbox-education {
         display: flex;               /* Enable Flexbox */
         justify-content: flex-start; /* Align items to the left */
-        padding-left: 5vw;           /* Use viewport width for relative sizing */
+        padding-left: 10vw;           /* Use viewport width for relative sizing */
     }
     
     #title-education {
