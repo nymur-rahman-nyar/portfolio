@@ -685,20 +685,25 @@ p {
 
 /*MOBILE OPTIMIZATION*/
 
-@media (max-width: 600px) {  /* Adjust this breakpoint as needed */
+@media (max-width: 600px) {  
+
+    /*The Intro part with Hi and work socials*/
     .site-header {
         flex-direction: column-reverse;
         align-items: center;
     }
 
     .header-image img {
+        margin-top: 20px;
         margin-left: 0px;
-        margin-bottom: 20px;   
+        margin-bottom: 0px;   
+        transform: scale(0.9);
         
     }
 
     .text-intro {
         text-align: center;
+        transform: scale(0.9);
     }
 
     .header-image {
@@ -709,48 +714,46 @@ p {
 
 
     /* UNIVERITY INFO*/
-    .flexbox-education {
-        display: flex;               /* Enable Flexbox */
-        justify-content: flex-start; /* Align items to the left */
-        padding-left: 10vw;           /* Use viewport width for relative sizing */
-    }
-    
-    #title-education {
-        padding-left: 5px;           /* Keeps padding small and appropriate for text elements */
+    #education_title{  
+        margin-top: 10px;
+        margin-bottom: 0px; /*removed the excess space below the line */
     }
     
     #university {
-        display: flex;               /* Enables flexbox layout */
-        justify-content: center;     /* Centers the items along the main axis (horizontally) */
-        align-items: center;         /* Centers the items along the cross axis (vertically) */
-        text-align: center;          /* Centers text alignment */
-        flex-direction: column;      /* Stacks the flex items vertically on smaller screens */
+        flex-direction: column;  /* Stack children vertically */
+        text-align: center;      /* Ensure text is centered after stacking */
+        margin-left: 5%;
+        margin-right: 5%;
+   
+        height: auto; /* The height will adjust automatically to maintain the aspect ratio */
+        transform: scale(0.9);
+
+    }
+
+
+    #graduation_start_end{
+        font-size: small;
+    }
+
+    #countdown-clock{
+        display: none;
+    }
+
+    
+    #university_text, #title-education {
+        padding-left: 10px;     /* Slightly larger padding for better mobile readability */
+    }
+
+    .flexbox-education {
+        padding-left: 2vw;      /* Reduce padding on smaller screens */
     }
     
-    #university_text {
-        font-size: 1.3em;            /* Makes the text larger than the default size */
-        font-weight: bold;           /* Makes the text bold */
-                  /* Adds space between the border and the text */
-        padding-bottom: 4px;
-    }
+
+
 
     #duration{
         padding-bottom: 40px;
     }
     
-    @media (max-width: 600px) {     /* Adjustments for mobile screens */
-        #university {
-            flex-direction: column;  /* Stack children vertically */
-            text-align: center;      /* Ensure text is centered after stacking */
-        }
-        
-        #university_text, #title-education {
-            padding-left: 10px;     /* Slightly larger padding for better mobile readability */
-        }
-    
-        .flexbox-education {
-            padding-left: 2vw;      /* Reduce padding on smaller screens */
-        }
-    }
 
 }
