@@ -753,7 +753,7 @@ p {
 
     /*this is the certification part*/
     #certification_title{
-        margin: 0;
+        margin-bottom: 0px; /*removed the excess space below the line */
     }
 
     #certifications {
@@ -769,5 +769,7 @@ p {
 
     /*skills part for mobile*/
     
-
+    #title_skills{
+        margin-top: 0;
+    }
 }
