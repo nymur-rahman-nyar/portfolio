@@ -685,7 +685,7 @@ p {
 
 /*MOBILE OPTIMIZATION*/
 
-@media (max-width: 600px) {  
+@media (max-width: 700px) {  
 
     /*The Intro part with Hi and work socials*/
     .site-header {
@@ -694,10 +694,10 @@ p {
     }
 
     .header-image img {
-        margin-top: 20px;
+        margin-top: 1%;
         margin-left: 0px;
         margin-bottom: 0px;   
-        transform: scale(0.9);
+        transform: scale(0.8);
         
     }
 
@@ -751,9 +751,23 @@ p {
 
 
 
-    #duration{
-        padding-bottom: 40px;
+    /*this is the certification part*/
+    #certification_title{
+        margin: 0;
     }
+
+    #certifications {
+        display: flex;
+        flex-direction: column; /* Stack cards on top of each other */
+        align-items: center; /* Center the cards */
+        transform: scale(0.8);
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    /*skills part for mobile*/
     
 
 }
