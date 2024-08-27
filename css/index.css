@@ -522,6 +522,10 @@ p {
     bottom: 0.25rem;
 }
 
+
+
+
+
 @media (min-width: 40rem) {
     .timeline {
         grid-template-columns: 1fr var(--line-w) 1fr;
@@ -563,6 +567,15 @@ p {
 .credits a {
     color: var(--color);
 }
+
+
+
+/*reducing the size of the timeline*/
+
+.timeline {
+    transform: scale(0.89);
+}
+
 
 
 
@@ -627,7 +640,7 @@ p {
 
 .fun-button {
     display: inline-block;
-    background-color: #007BFF; /* A vibrant blue color */
+    background-color: #505050; /* A vibrant blue color */
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -640,8 +653,8 @@ p {
 }
 
 .fun-button:hover, .fun-button:focus {
-    background-color: #0056b3; /* A slightly darker blue on hover for a tactile feel */
-    color: #FFD700; /* Gold color for text on hover for more fun */
+    background-color: #232323; /* A slightly darker blue on hover for a tactile feel */
+    color: #ffffff; /* Gold color for text on hover for more fun */
     transform: scale(1.05); /* Slightly enlarges the button on hover */
     box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Deeper shadow on hover */
 }
@@ -704,6 +717,7 @@ p {
     .header-image{
         padding-bottom: 0px;
         margin-bottom: 0px;
+        
     }
 
     .text-intro {
