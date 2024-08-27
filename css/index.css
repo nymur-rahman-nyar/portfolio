@@ -701,6 +701,11 @@ p {
         
     }
 
+    .header-image{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
     .text-intro {
         text-align: center;
         transform: scale(0.9);
