@@ -14,40 +14,8 @@ body, html {
 }
 
 
-body {
-    display: flex;
-    flex-direction: column; /* Organizes the content in a vertical stack */
-    min-height: 100vh; /* Minimum height to cover the full viewport */
-}
 
 
-
-main {
-    flex: 1; /* Allows the main content to expand and take up available space */
-}
-
-/*  HEADER  */
-.site-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    background-color: #f8f9fa;
-}
-
-
-.header-text {
-    order: 2;
-    text-align: right;
-    padding-left: 20px;
-}
-
-.header-image img {
-    margin-left: 20px;
-    width: 400px;
-    height: auto;
-    border-radius: 5px;
-}
 
 /* Navigation */
 .main-nav {
@@ -85,44 +53,4 @@ main {
 
 /*Styles for the page starts here*/
 
-.project-info ul {
-    list-style-position: inside; /* Ensures bullets stay inside the div */
-    padding-left: 20px; /* Adds space inside the list */
-    margin: 10px 0 10px 10px; /* Proper margin settings for visual comfort */
-}
-.project-info li {
-    margin-bottom: 5px; /* Adds a little space between list items */
-}
-
-.project-info a {
-    color: #1a0dab; /* Typical hyperlink blue */
-    text-decoration: none; /* Removes underline from links */
-}
-
-.project-info a:hover {
-    text-decoration: underline; /* Adds underline on hover for links */
-}
-
-.project-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; /* Ensures that child elements stretch to fill the width */
-    padding: 20px 15vw; 
-}
-
-.project {
-    width: calc(100% - 20px); /* Adjusts the width to account for the padding */
-    margin: 10px auto; /* Centers the card and maintains vertical spacing */
-    box-shadow: 0 0 8px #ccc;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project-info {
-    padding: 10px;
-}
 
