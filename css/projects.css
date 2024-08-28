@@ -5,13 +5,7 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    font-family: 'Varela', sans-serif; /* Sets Varela as the basic font for the webpage */
-    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
-    background-color: #f4f4f4; /* Sets a light grey background for the entire page */
-    flex: 1;
-}
+
 
 
 
@@ -54,3 +48,55 @@ body, html {
 /*Styles for the page starts here*/
 
 
+#main_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#child_container{
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Ensure that the content within does not overflow outside */
+    
+}
+
+
+/*side bar here lesgoo*/
+#side_bar{
+    display: flex;
+    flex: 0 0 200px;
+}
+
+#side_bar_content {
+    margin: 20px;
+}
+
+#side_bar_content .nav-link {
+    color: #333; /* Set your desired color */
+    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adjust this value to increase or decrease the spacing */
+    border-bottom: 2px solid #333; /* Set the thickness, style, and color of the border */
+    padding-bottom: 8px; /* Adjust padding to ensure space between the text and the border */
+
+}
+
+#side_bar_content .nav-link.active {
+    color: #000000; /* Optional: Different color for the active link */
+}
+
+#side_bar_content .nav-link:hover {
+    color: #777; /* Optional: Color change on hover */
+}
+
+
+
+
+/*project content part start here lesgooooo*/
+
+#project_details{
+    background-color:#f8f9fa;
+    overflow: auto;
+
+}
