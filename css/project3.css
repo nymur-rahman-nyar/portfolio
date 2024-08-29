@@ -1,0 +1,60 @@
+
+#carouselExampleSlidesOnly{
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .video-item {
+    flex: 1 1 calc(33.333% - 30px); /* Adjust width as needed for large screens */
+    box-sizing: border-box;
+    max-width: 500px; /* Fixed width for video container */
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 300px; /* Medium size for desktop */
+    border: none;
+  }
+  
+  .video-item p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments for medium screens (desktops) */
+  @media (max-width: 1024px) {
+    .video-item {
+      flex: 1 1 calc(50% - 30px); /* Two items per row on medium screens */
+      max-width: 50%; /* Ensure full width within flex container */
+    }
+  
+    .video-item iframe {
+      height: 150px; /* Slightly smaller height for medium screens */
+    }
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .video-item {
+      flex: 1 1 100%;
+      width: 100%;
+      max-width: 100%; /* Ensure full width on small screens */
+    }
+  
+    .video-item iframe {
+      height: 100px; /* Adjust height for smaller screens */
+    }
+  }
+  
