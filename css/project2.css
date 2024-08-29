@@ -1,0 +1,59 @@
+#app_part {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+}
+
+#app_video_part {
+    flex: 0 0 auto;
+    width: 300px;
+    max-width: 100%; /* Ensures the video container does not exceed the screen width */
+    margin-right: 100px;
+}
+
+#app_video_part video {
+    width: 100%;
+    height: auto;
+    box-shadow: -10px 10px 0px #333;
+}
+
+#app_written_part {
+    flex: 1;
+    padding: 30px;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app_part {
+        flex-direction: column; /* Stack the video and text vertically on smaller screens */
+    }
+
+    #app_video_part {
+        width: 100%;
+        margin-right: 0; /* Remove the right margin to maximize space */
+        margin-bottom: 20px; /* Add some space below the video */
+    }
+
+    #app_written_part {
+        padding: 20px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #app_video_part {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #app_written_part {
+        padding: 15px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+}
